@@ -20,6 +20,7 @@
             align-items: center;
             justify-content: center;
             gap:24px;
+            padding:20px;
         }
         h1 {
             font-size: 48px;
@@ -28,20 +29,18 @@
             font-size:20px;
             opacity:0.75;
         }
-        video {
-            max-width:90vw;
-            max-height:60vh;
+        .bilibili-player {
+            width:100%;
+            max-width:720px;
+            height:400px;
             border-radius:8px;
+            border:none;
         }
     </style>
 </head>
 <body>
     <h1>langs‑sat.xyz</h1>
     <p>coming soon</p>
-    <!-- 把你的视频文件放到仓库根目录，修改下面video.mp4为你的视频文件名 -->
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        你的浏览器不支持视频播放
-    </video>
+    <iframe class="bilibili-player" src="https://player.bilibili.com/player.html?bvid=BV1GJ411x7h7&isOutside=true" scrolling="no" allowfullscreen></iframe>
 </body>
 </html>
